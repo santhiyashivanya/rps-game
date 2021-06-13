@@ -1,6 +1,6 @@
 const rock = document.querySelector('#rock');
 const paper = document.querySelector('#paper');
-const scissors = document.querySelector('#scissors');
+const scissors = document.querySelector('#scissor');
 const mainDiv = document.querySelector('.choses');
 const wrapperDiv = document.querySelector('.wrapper');
 const resetDiv = document.querySelector(".reset")
@@ -8,9 +8,9 @@ const resetDiv = document.querySelector(".reset")
 const choses = ['rock','paper','scissor'];
 
 const scoreDataBase = {
-    'rock': {'rock':0.5,'paper':0,'scissor':1},
-    'paper': {'rock':1,'paper':0.5,'scissor':0},
-    'scissor': {'rock':0,'paper':1,'scissor':0.5}
+    'rock': {'rock':1,'paper':0,'scissor':0.5},
+    'paper': {'rock':0.5,'paper':1,'scissor':0},
+    'scissor': {'rock':0,'paper':0.5,'scissor':1}
 }
 
 const imageDataBase = {
@@ -64,7 +64,7 @@ function removeChoses(){
 
 function frontEnd(yourChoice,botChoice,finalMessage) {
     mainDiv.innerHTML = `<img class='results' id="yourChoice" src="${imageDataBase[yourChoice]}" alt="${yourChoice}" width="100px" height="100px"/><h2 class='results' style="color:${finalMessage['color']}">${finalMessage['message']}</h2><img class='results' id="botChoice" src="${imageDataBase[botChoice]}" alt="${botChoice}" width="100px" height="100px"/>`;
-    resetDiv.innerHTML = `<button onclick="restart()">Refresh</button>`;
+    resetDiv.innerHTML = `<button onclick="restart()">Restart</button>`;
 }
 
 function restart(){
