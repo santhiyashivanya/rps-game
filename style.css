@@ -2,20 +2,21 @@
     margin:0;
     border:0;
     box-sizing:border-box;
+    padding:8px;
     
 }
 .choses{
     display: flex;
     justify-content: space-around;
-    padding: 60px 30px 30px 30px;
+    padding: 50px 0 0;
     cursor: pointer;
     }
 .wrapper{
-    padding: 50px ;
-    
+    height:0vh;
+    margin: 0px;
 }
-h1{
-    padding: 30px;
+header{
+    padding: auto;
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 background: rgb(139,85,15);
@@ -27,13 +28,8 @@ body{
 }
 button{
     border-radius: 2px;
-    padding: 20px;
-    border-width: 10px;
-background-color:rgb(20, 202, 44);
+    padding: 10px;
+    background-color:rgb(20, 202, 44);
 color: rgb(255, 254, 254);
-margin: 80px 300px;
-
-
-
-
+margin: 80px 90px;
 }
