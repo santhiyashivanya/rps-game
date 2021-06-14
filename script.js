@@ -8,9 +8,9 @@ const resetDiv = document.querySelector(".reset")
 const choses = ['rock','paper','scissor'];
 
 const scoreDataBase = {
-    'rock': {'rock':1,'paper':0,'scissor':0.5},
-    'paper': {'rock':0.5,'paper':1,'scissor':0},
-    'scissor': {'rock':0,'paper':0.5,'scissor':1}
+    'rock': {'rock':0.5,'paper':0,'scissor':1},
+    'paper': {'rock':1,'paper':0.5,'scissor':0},
+    'scissor': {'rock':0,'paper':1,'scissor':0.5},
 }
 
 const imageDataBase = {
